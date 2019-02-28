@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flex-direction</title>
+  <style>
+    html,body{
+		 background: #f7f7f7;
+	  }
+	.flex-container{
+		display: flex;
+		color: #fff;
+    min-height: 400px;
+	}
+	.flex-item{
+		width: 150px;
+    height: 100px;
+	}
+	.red{
+		background: red;
+	}
+	.green{
+		background: green;
+	}
+	.yellow{
+		background: yellow;
+	}
+	.black{
+		background: black;
+	}
+  </style>
+</head>
+<body>
+  <script>
+    var changeClick = function (val) {
+      var flexParent = document.querySelector('.flex-container')
+      var styleArr = ['row','column','row-reverse','column-reverse']
+      flexParent.style.flexDirection = styleArr[val]
+      console.log(flexParent.style, val)
+    }
+
+  </script>
+  <div class="flex-container">
+    <div class="flex-item red">
+      1
+    </div>
+    <div class="flex-item green">
+      2
+    </div>
+    <div class="flex-item yellow">
+      3
+    </div>
+    <div class="flex-item black">
+      4
+    </div>
+  </div>
+  <div>
+    <button onclick="changeClick(0)">row</button>
+    <button onclick="changeClick(1)">column</button>
+    <button onclick="changeClick(2)">row-reverse</button>
+    <button onclick="changeClick(3)">column-reverse</button>
+  </div>
+</body>
+</html>
