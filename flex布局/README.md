@@ -26,7 +26,7 @@
 - row-reverse：主轴水平，项目从右至左排列，与row反向
 - column-reverse：主轴竖直，项目从下至上排列，与column反向
 
-<a href="">举个栗子</a>
+<a href="http://htmlpreview.github.com/?https://github.com/boa182/css-memo/blob/master/flex%E5%B8%83%E5%B1%80/parentAttribute/flex-direction.html">举个栗子</a>
 
 3.**flex-wrap设置子项目换行:**
 

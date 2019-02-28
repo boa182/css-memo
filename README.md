@@ -1,12 +1,7 @@
 <h2>目录<h2>
-<<<<<<< HEAD
-- <a href="#box">盒模型</a>
-- <a href="">flex 布局</a>
-=======
-  
-* <a href="#box">1.盒模型</a>
 
->>>>>>> 4c5521283d78ca9b19a1f1f9641ff32352ae7dad
+- <a href="#box">盒模型</a>
+- <a href="https://github.com/boa182/css-memo/tree/master/flex%E5%B8%83%E5%B1%80">flex 布局</a>
 
 
 <p id="box">1.盒模型</p> 
