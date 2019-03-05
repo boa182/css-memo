@@ -54,3 +54,32 @@ body,p{margin: 0;}
 </div>
 ```
 2.**display:table-cell**
+```
+会使元素表现的类似一个表格中的单元格td,td默认就是等高的
+```
+- [注意] 不要与float：left; position:absolute; 一起使用 
+- [注意] margin设置无效，响应padding设置
+- [注意] 不要对display：table-cell使用百分比设置宽度和高度
+```css
+<style>
+  .left,.right{
+    border:1px solid #ccc;
+    width: 200px;
+    display: table-cell;
+  }
+  </style>
+```
+```html
+<div class="parent">
+  <div class="left">
+    <p>12345667</p>
+    <p>30092888</p>
+    <p>hhhhhhhh</p>
+  </div>
+
+  <div class="right">
+    <p>hahahha</p>
+  </div>
+</div>
+```
+table-cell其他的拓展应用：<br/>https://blog.csdn.net/messagebox_/article/details/82380913
