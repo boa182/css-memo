@@ -7,3 +7,50 @@
 ```
 
 1.**负margin**
+```
+思路：
+    设置一个大数值的padding-bottom，再设置相同数值的负的margin-bottom
+```
+- [注意]如果页面中使用 a标签锚点跳转时，将会隐藏部分文字信息
+
+- [注意]如果页面中的背景图片定位到底部，将会看不到背景图片
+```css
+<style>
+body,p{margin: 0;}
+.parent{
+    overflow: hidden;
+    background-color: lightgrey;
+}
+.left,.centerWrap,.right{
+    float: left;
+    width: 50%;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+    background-color: pink;
+}
+.center{
+    margin: 0 20px;
+}
+.left,.right{
+    width: 25%;
+    background-color: lightblue;
+}
+</style>
+```
+```html
+<div class="parent">
+    <div class="left">
+      <p>left</p>
+    </div>
+    <div class="centerWrap">
+      <div class="center">
+        <p>center</p>
+        <p>center</p>
+      </div>
+    </div>
+    <div class="right">
+        <p>right</p>
+    </div>
+</div>
+```
+2.**display:table-cell**
