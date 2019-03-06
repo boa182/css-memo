@@ -88,3 +88,27 @@ table-cell其他的拓展应用：<br/>https://blog.csdn.net/messagebox_/article
 ```
 flex中的伸缩项目默认都拉伸为父元素的高度，也实现了等高效果
 ```
+- [注意] 兼容性不是很好
+```html
+<style>
+  .parent {
+    display: flex;
+  }
+  .left,.right{
+    border:1px solid #ccc;
+    flex: 1;
+  }
+</style>
+```
+```html
+<div class="parent">
+  <div class="left">
+    <p>12334</p>
+    <p>123444</p>
+    <p>2345666</p>
+  </div>
+  <div class="right">
+    <p>ohohoho</p>
+  </div>
+</div>
+```
