@@ -83,3 +83,8 @@ body,p{margin: 0;}
 </div>
 ```
 table-cell其他的拓展应用：<br/>https://blog.csdn.net/messagebox_/article/details/82380913
+
+3.**flex布局**
+```
+flex中的伸缩项目默认都拉伸为父元素的高度，也实现了等高效果
+```
