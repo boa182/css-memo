@@ -112,3 +112,34 @@ flex中的伸缩项目默认都拉伸为父元素的高度，也实现了等高�
   </div>
 </div>
 ```
+
+4.**grid 布局**
+```
+display: grid ：创建一个网格系统
+
+grid-auto-flow： 网格默认流方向是row,可以通过此属性把网格流的方向改变成column　　 
+
+```
+- [注意] Internet Explorer 10和11支持它，但需要使用过时的语法。
+- [点击学习更多grid相关的属性](http://)
+```html
+<style>
+  .parent {
+    display: grid;
+    grid-auto-flow: column;
+  }
+  .left,.right {
+    border: 1px solid;
+  }
+</style>
+<div class="parent">
+  <div class="left">
+    123314444<br/>
+    3333333331<br/>
+    123344
+  </div>
+  <div class="right">
+    23444
+  </div>
+</div>
+```
